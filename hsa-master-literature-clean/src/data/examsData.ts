@@ -1,0 +1,208 @@
+import { Exam, Question } from '../types';
+import { GENERATED_IMAGES } from './officialInfo';
+import { QUESTIONS_PART_1 } from './questionsPart1';
+import { QUESTIONS_PART_2 } from './questionsPart2';
+
+export const INITIAL_QUESTIONS: Question[] = [
+  ...QUESTIONS_PART_1,
+  ...QUESTIONS_PART_2,
+];
+
+export const INITIAL_EXAMS: Exam[] = [
+  {
+    id: 'EXAM-HSA-01',
+    code: 'HSA-NV2026-01',
+    title: 'Đề Mô Phỏng Đánh Giá Năng Lực Ngữ Văn – Số 01 (Toàn Diện)',
+    description:
+      'Đề mô phỏng theo cấu trúc đánh giá năng lực tư duy ngôn ngữ và đọc hiểu văn bản, bao quát đủ 10 chuyên đề từ Tiếng Việt, Ngữ nghĩa đến Phân tích, Suy luận và Đọc hiểu nâng cao.',
+    coverImage: GENERATED_IMAGES.examCover,
+    questionIds: [
+      'Q001', 'Q002', 'Q006',
+      'Q012', 'Q013', 'Q017',
+      'Q023', 'Q027', 'Q030',
+      'Q033', 'Q035', 'Q038',
+      'Q044', 'Q049',
+      'Q054', 'Q057', 'Q060',
+      'Q065', 'Q066', 'Q069',
+      'Q076', 'Q077', 'Q079',
+      'Q086', 'Q088', 'Q090',
+      'Q096', 'Q097', 'Q101', 'Q105',
+    ],
+    durationMinutes: 45,
+    maxScore: 100,
+    difficulty: 'Trung bình',
+    topic: 'Tổng hợp toàn diện',
+    categoryType: 'Đề mô phỏng cấu trúc HSA',
+    isNew: true,
+    knowledgeOutline: [
+      'Đọc hiểu văn bản thông tin, nghị luận và văn học (30%)',
+      'Thực hành Tiếng Việt, Ngữ nghĩa và Biện pháp tu từ (30%)',
+      'Kiến thức văn học sử, Lý luận văn học và Phân tích tác phẩm (20%)',
+      'Tư duy suy luận logic, Đánh giá liên hệ và Đọc hiểu nâng cao (20%)',
+    ],
+    instructions: [
+      'Đề thi gồm 30 câu hỏi trắc nghiệm khách quan 4 lựa chọn, thời gian làm bài 45 phút.',
+      'Hệ thống tự động lưu đáp án, câu hỏi đang xem và trạng thái đánh dấu ngay khi thao tác.',
+      'Đồng hồ đếm ngược theo thời gian thực và không bị đặt lại khi tải lại trang.',
+      'Lưu ý: Đây là đề mô phỏng theo cấu trúc đánh giá năng lực phục vụ học tập tại Trường THPT Yên Lãng, không phải đề thi chính thức của đơn vị tổ chức kỳ thi.',
+    ],
+    createdAt: '2026-09-15',
+  },
+  {
+    id: 'EXAM-HSA-02',
+    code: 'HSA-NV2026-02',
+    title: 'Đề Mô Phỏng Đánh Giá Năng Lực Ngữ Văn – Số 02 (Chuyên Sâu Tư Duy)',
+    description:
+      'Đề mô phỏng cấu trúc đánh giá năng lực tập trung vào khả năng giải mã ngữ liệu mới, suy luận logic, đối sánh liên văn bản và vận dụng ngôn ngữ bậc cao.',
+    coverImage: GENERATED_IMAGES.homeHero,
+    questionIds: [
+      'Q004', 'Q008', 'Q009', 'Q011',
+      'Q015', 'Q020', 'Q022',
+      'Q025', 'Q028', 'Q031', 'Q032',
+      'Q037', 'Q040', 'Q043',
+      'Q047', 'Q050', 'Q052',
+      'Q056', 'Q061', 'Q064',
+      'Q067', 'Q071', 'Q073', 'Q075',
+      'Q081', 'Q083', 'Q085',
+      'Q092', 'Q095',
+      'Q098', 'Q099', 'Q103',
+    ].slice(0, 30),
+    durationMinutes: 45,
+    maxScore: 100,
+    difficulty: 'Khó',
+    topic: 'Tổng hợp toàn diện',
+    categoryType: 'Đề mô phỏng cấu trúc HSA',
+    isNew: true,
+    knowledgeOutline: [
+      'Giải mã hàm ý, ẩn dụ tư tưởng trong văn bản nghị luận hiện đại',
+      'Phân biệt sắc thái từ đồng nghĩa, từ Hán Việt và chuyển loại từ',
+      'Phân tích thi pháp Thơ mới, tùy bút Nguyễn Tuân và kịch Lưu Quang Vũ',
+      'Suy luận tương đồng cấu trúc và liên hệ văn hóa thời hội nhập',
+    ],
+    instructions: [
+      'Đề thi gồm 30 câu hỏi phân hóa ở mức độ Trung bình, Khó và Vận dụng cao.',
+      'Hãy đọc kỹ phần ngữ liệu bên khung đọc trước khi chọn phương án trả lời.',
+      'Sử dụng chức năng “Đánh dấu xem lại” (màu cam) cho các câu hỏi cần suy ngẫm thêm.',
+    ],
+    createdAt: '2026-09-22',
+  },
+  {
+    id: 'EXAM-PRAC-03',
+    code: 'YL-LT2026-03',
+    title: 'Đề Luyện Tập Chuyên Đề: Tiếng Việt, Ngữ Nghĩa & Biện Pháp Tu Từ',
+    description:
+      'Đề luyện tập tự biên soạn giúp học sinh củng cố vững chắc kiến thức Tiếng Việt, chữa lỗi ngữ pháp, nắm vững nghĩa gốc - nghĩa chuyển và nhận diện chính xác các biện pháp tu từ.',
+    coverImage: GENERATED_IMAGES.introHero,
+    questionIds: [
+      'Q012', 'Q013', 'Q014', 'Q015', 'Q016', 'Q017', 'Q018', 'Q019', 'Q020', 'Q021', 'Q022',
+      'Q023', 'Q024', 'Q025', 'Q026', 'Q027', 'Q028', 'Q029', 'Q030',
+      'Q033', 'Q034', 'Q035', 'Q036', 'Q037', 'Q038',
+    ],
+    durationMinutes: 35,
+    maxScore: 100,
+    difficulty: 'Trung bình',
+    topic: 'Tiếng Việt',
+    categoryType: 'Đề luyện tập tự biên soạn',
+    isNew: false,
+    knowledgeOutline: [
+      'Chính tả, từ láy - từ ghép, từ Hán Việt và thành phần biệt lập (44%)',
+      'Từ nhiều nghĩa, từ đồng âm, thành ngữ và sắc thái từ vựng (32%)',
+      'Các biện pháp tu từ từ vựng và cú pháp trong thơ văn (24%)',
+    ],
+    instructions: [
+      'Đề luyện tập tự biên soạn gồm 25 câu hỏi chuyên sâu về Tiếng Việt và Tu từ.',
+      'Thời gian làm bài: 35 phút. Thang điểm quy đổi chuẩn: 100 điểm.',
+    ],
+    createdAt: '2026-10-01',
+  },
+  {
+    id: 'EXAM-PRAC-04',
+    code: 'YL-LT2026-04',
+    title: 'Đề Luyện Tập Chuyên Đề: Kiến Thức Văn Học & Phân Tích Tác Phẩm',
+    description:
+      'Đề luyện tập tự biên soạn tập trung vào diện mạo lịch sử văn học Việt Nam, lý luận thể loại (truyện ngắn, thơ, kịch, sử thi, cáo) và kỹ năng phân tích chi tiết nghệ thuật.',
+    coverImage: GENERATED_IMAGES.examCover,
+    questionIds: [
+      'Q054', 'Q055', 'Q056', 'Q057', 'Q058', 'Q059', 'Q060', 'Q061', 'Q062', 'Q063', 'Q064',
+      'Q065', 'Q066', 'Q067', 'Q068', 'Q069', 'Q070', 'Q071', 'Q072', 'Q073', 'Q074', 'Q075',
+      'Q039', 'Q040', 'Q041',
+    ],
+    durationMinutes: 35,
+    maxScore: 100,
+    difficulty: 'Trung bình',
+    topic: 'Phân tích văn bản',
+    categoryType: 'Đề luyện tập tự biên soạn',
+    isNew: false,
+    knowledgeOutline: [
+      'Thể loại văn học dân gian, văn học trung đại và văn học hiện đại (44%)',
+      'Phân tích hình tượng, điểm nhìn trần thuật và chi tiết nghệ thuật (44%)',
+      'Phân tích hiệu quả tu từ trong ngữ cảnh tác phẩm (12%)',
+    ],
+    instructions: [
+      'Đề luyện tập gồm 25 câu hỏi bám sát chương trình Ngữ văn THPT.',
+      'Sau khi nộp bài, học sinh xem giải thích chi tiết và gợi ý ghi nhớ cho từng câu.',
+    ],
+    createdAt: '2026-10-08',
+  },
+  {
+    id: 'EXAM-PRAC-05',
+    code: 'YL-LT2026-05',
+    title: 'Đề Luyện Tập Chuyên Đề: Đọc Hiểu, Suy Luận & Đánh Giá Liên Hệ',
+    description:
+      'Đề luyện tập tự biên soạn rèn luyện kỹ năng đọc hiểu văn bản nghị luận xã hội, văn bản thông tin, suy luận logic và liên hệ thực tiễn đời sống đương đại.',
+    coverImage: GENERATED_IMAGES.homeHero,
+    questionIds: [
+      'Q001', 'Q002', 'Q004', 'Q006', 'Q008', 'Q010',
+      'Q044', 'Q045', 'Q046', 'Q048',
+      'Q076', 'Q077', 'Q078', 'Q079', 'Q080', 'Q081', 'Q082', 'Q084',
+      'Q086', 'Q087', 'Q089', 'Q090', 'Q091', 'Q093', 'Q094',
+    ],
+    durationMinutes: 35,
+    maxScore: 100,
+    difficulty: 'Dễ',
+    topic: 'Đọc hiểu văn bản',
+    categoryType: 'Đề luyện tập tự biên soạn',
+    isNew: false,
+    knowledgeOutline: [
+      'Đọc hiểu thông tin tường minh và cấu trúc đoạn văn (24%)',
+      'Nhận diện 6 phong cách ngôn ngữ chức năng (16%)',
+      'Suy luận nguyên nhân - hệ quả từ ngữ liệu đọc hiểu (32%)',
+      'Đánh giá tư tưởng và liên hệ trách nhiệm tuổi trẻ (28%)',
+    ],
+    instructions: [
+      'Đề luyện tập gồm 25 câu hỏi vừa sức, phù hợp để khởi động và rèn phản xạ đọc hiểu.',
+      'Thời gian làm bài: 35 phút.',
+    ],
+    createdAt: '2026-10-15',
+  },
+  {
+    id: 'EXAM-HSA-06',
+    code: 'HSA-NV2026-06',
+    title: 'Đề Chinh Phục Đỉnh Cao: Đọc Hiểu Nâng Cao & Lý Luận Văn Học',
+    description:
+      'Đề luyện tập phân hóa cao dành cho học sinh muốn bứt phá điểm số ở các câu hỏi lý luận tiếp nhận văn học, thi pháp học, triết lý văn hóa và tư duy phản biện.',
+    coverImage: GENERATED_IMAGES.introHero,
+    questionIds: [
+      'Q009', 'Q011', 'Q022', 'Q031', 'Q032', 'Q042', 'Q043', 'Q050', 'Q053',
+      'Q060', 'Q062', 'Q064', 'Q075', 'Q083', 'Q085', 'Q088', 'Q092', 'Q095',
+      'Q096', 'Q097', 'Q098', 'Q099', 'Q100', 'Q101', 'Q102', 'Q103', 'Q104', 'Q105',
+      'Q003', 'Q005',
+    ],
+    durationMinutes: 40,
+    maxScore: 100,
+    difficulty: 'Vận dụng cao',
+    topic: 'Đọc hiểu nâng cao',
+    categoryType: 'Đề mô phỏng cấu trúc HSA',
+    isNew: true,
+    knowledgeOutline: [
+      'Đọc hiểu nâng cao về thi pháp học và lý thuyết tiếp nhận văn học (40%)',
+      'Vận dụng cao về ngữ nghĩa hàm ẩn, chuyển loại từ và phong cách (30%)',
+      'Tư duy phản biện, đối sánh liên văn bản và bản lĩnh văn hóa (30%)',
+    ],
+    instructions: [
+      'Đề thi gồm 30 câu hỏi ở mức độ Khó và Vận dụng cao, thời gian làm bài 40 phút.',
+      'Hãy phân tích kỹ mối quan hệ lập luận giữa các vế câu trước khi đưa ra quyết định.',
+    ],
+    createdAt: '2026-10-25',
+  },
+];

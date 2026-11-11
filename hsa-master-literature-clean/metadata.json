@@ -1,0 +1,8 @@
+{
+  "name": "Remix HSA Master",
+  "description": "A modern digital platform for Literature learning, competency assessment, and interactive practice designed for students to excel academically.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
